@@ -1,0 +1,43 @@
+.border-btn,
+.fill-btn {
+    width: 120px;
+    font-size: 0.8rem;
+    font-weight: 600;
+    color: #fff;
+    margin: 5px;
+    height: 40px;
+    text-align: center;
+    border: none;
+    background-size: 300% 100%;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: all 100ms ease-in-out;
+}
+
+.border-btn {
+    background-color: transparent;
+    border: 1px solid var(--primary);
+    transition: all 350ms ease-in-out;
+}
+.border-btn:hover {
+    background: var(--secundary);
+    border: none;
+}
+
+.fill-btn-hover:hover {
+    background-position: 100% 0;
+    transition: all 100ms ease-in-out;
+}
+
+.fill-btn-hover:focus {
+    outline: none;
+}
+
+.fill-btn-hover.fill-btn {
+    background-image: linear-gradient(to left,
+            var(--primary),
+            var(--primary),
+            var(--secundary),
+            var(--primary),
+        );
+}

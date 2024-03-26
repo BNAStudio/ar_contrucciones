@@ -1,0 +1,101 @@
+/* np = new projects */
+.c-np {
+    display: flex;
+    width: 100%;
+    margin: 100px 0;
+    flex-direction: column;
+    row-gap: 100px;
+}
+
+.np-content {
+    height: 100%;
+    position: relative;
+    height: 550px;
+    overflow: hidden;
+}
+
+.np-image {
+    width: 100%;
+    position: absolute;
+    top: -25%;
+    object-fit: contain;
+    mask-image: linear-gradient(to right, rgba(0, 0, 0, 0.1) 10%, black);
+    transition: transform 600ms ease-in-out;
+    transform-origin: 100% 100%; 
+    z-index: 0;
+}
+
+.np-text-content-left {
+    width: 600px;
+    height: 225px;
+    position: relative;
+    top: 50%;
+    left: 5%;
+    color: var(--light);
+    display: flex;
+    align-items: center;
+    align-content: space-around;
+    flex-wrap: wrap;
+    row-gap: 10px;
+}
+
+.np-text-content-right {
+    width: 600px;
+    height: 225px;
+    position: relative;
+    top: 50%;
+    left: 55%;
+    color: var(--light);
+    display: flex;
+    align-items: center;
+    align-content: space-around;
+    flex-wrap: wrap;
+    row-gap: 10px;
+    text-align: right;
+    justify-content: flex-end;
+}
+
+.np-title {
+    width: 100%;
+    font-size: 2rem;
+    width: 100%;
+    color: var(--light);
+}
+
+.np-subtitle {
+    width: 100%;
+    font-size: 1.5rem;
+    width: 100%;
+    color: var(--secundary);
+}
+
+.np-title-span {
+    color: "var(--primary)";
+    text-shadow: 0 0 20px var(--light);
+    animation: glow 5s infinite ease-in-out;
+    color: var(--primary);
+    font-weight: 500;
+}
+
+.c-tag {
+    border: 1px solid var(--secundary);
+    padding: 15px;
+    border-radius: 10px;
+    font-size: 0.8rem;
+}
+
+.np-text-bold {
+    width: 100%;
+}
+
+@keyframes glow {
+    0% {
+        text-shadow: 0 0 20px var(--light);
+    }
+    50% {
+        text-shadow: 0 0 30px var(--light), 0 0 50px var(--light), 0 0 70px var(--light);
+    }
+    100% {
+        text-shadow: 0 0 20px var(--light);
+    }
+}

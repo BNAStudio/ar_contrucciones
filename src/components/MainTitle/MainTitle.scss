@@ -1,0 +1,44 @@
+.c-banner-content {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    flex-wrap: wrap;
+    width: 100%;
+    margin: 20px 0;
+    gap: 10px;
+}
+
+.banner-title {
+    width: 100%;
+    font-size: 2rem;
+    color: var(--light);
+    text-shadow: 5px 5px 8px rgb(122, 123, 136);
+    animation: pulseTextShadow 4s infinite;
+}
+
+.banner-subtitle {
+    width: 100%;
+    font-size: 1rem;
+    color: var(--light);
+    animation: showSubtitle 3s ease-in;
+}
+
+@keyframes pulseTextShadow {
+    0%, 100% {
+        text-shadow: 2px 2px 10px var(--light);
+    }
+    50% {
+        text-shadow: 2px 2px 15px var(--primary);
+    }
+}
+
+@keyframes showSubtitle {
+    from {
+        transform: translateX(200%);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
