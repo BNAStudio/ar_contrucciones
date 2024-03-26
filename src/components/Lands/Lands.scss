@@ -4,6 +4,7 @@
     display: flex;
     justify-content: center;
     color: white;
+    flex-wrap: wrap;
 }
 
 .lands-form {
@@ -12,7 +13,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-wrap: wrap;
+    flex-flow: column wrap;
     column-gap: 10px;
 }
 
@@ -23,6 +24,7 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    margin-bottom: 30px;
 }
 
 .input {
@@ -60,4 +62,33 @@ input[type=text] {
     border-bottom: 1px solid var(--primary);
     font-size: 1rem;
     padding-bottom: 10px;
+}
+
+.c-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    text-align: center;
+    row-gap: 20px;
+}
+.c-content > h2,
+.c-content > h3,
+.c-content > p {
+    width: 100%;
+}
+
+.c-content > h2 {
+    font-size: 2rem;
+    color: var(--primary);
+}
+
+.c-content > h3 {
+    font-size: 1.5rem;
+    color: var(--secundary);
+}
+
+.c-content > p {
+    font-size: 1rem;
+    color: var(--light);
 }
